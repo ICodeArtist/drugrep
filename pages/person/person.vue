@@ -22,14 +22,21 @@
 			</view> -->
 		</view>
 		<view class="ucenter-line"></view>
-		<view class="grace-list grace-body" @click="showDialog1">
-			<view class="items">
+		<view class="grace-list grace-body">
+			<view class="items" @click="showDialog1">
 				<view class="icons grace-icons icon-share2 grace-blue"></view>
 				<view class="body">
 					<view class="title">我的邀请码</view>
 				</view>
 				<view class="arrow-right"></view>
 			</view>
+			<navigator url="../answer/answer?type=1" class="items">
+				<view class="icons grace-icons icon-kf3 grace-red"></view>
+				<view class="body">
+					<view class="title">客服qq</view>
+				</view>
+				<view class="arrow-right"></view>
+			</navigator>
 		</view>
 		<!-- <view class="ucenter-line"></view> -->
 		<!-- <view class="grace-list grace-body">
