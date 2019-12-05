@@ -25,6 +25,14 @@
             	}
             }
         }
+        ,{
+            "path" : "pages/mylower/mylower",
+            "style" : {
+            	"app-plus":{
+            		"titleNView":false
+            	}
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

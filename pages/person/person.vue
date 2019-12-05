@@ -12,10 +12,10 @@
 		</view>
 		<view class="ucenter-line"></view>
 		<view class="grace-box-banner">
-			<view class="garce-items">
+			<navigator url="../mylower/mylower" class="garce-items">
 				<view class="line1">{{one_invite}}</view>
 				<view class="line2">我的下级</view>
-			</view>
+			</navigator>
 			<!-- <view class="garce-items">
 				<view class="line1">29</view>
 				<view class="line2">好友</view>
@@ -30,7 +30,7 @@
 				</view>
 				<view class="arrow-right"></view>
 			</view>
-			<navigator url="../answer/answer?type=1" class="items">
+			<navigator url="../answer/answer?type=4" class="items">
 				<view class="icons grace-icons icon-kf3 grace-red"></view>
 				<view class="body">
 					<view class="title">客服qq</view>

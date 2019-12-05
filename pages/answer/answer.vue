@@ -1,9 +1,11 @@
 <template>
 	<view>
-		<view class="grace-margin-top">
-			<text class="grace-title grace-margin-left">点击复制客服QQ号,添加好友后咨询问题</text>
-		</view>
 		<view class="grace-list grace-body">
+			<view class="item">
+				<view class="body">
+					<view class="grace-title">点击复制客服QQ号,添加好友后咨询</view>
+				</view>
+			</view>
 			<view class="items" @click="showDialog(answer.qq)" v-for="(answer,index) in answers" v-bind:key="index">
 				<view class="icons grace-icons icon-kf3 grace-red"></view>
 				<view class="body">
