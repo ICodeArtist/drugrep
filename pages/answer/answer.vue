@@ -15,6 +15,7 @@
 </template>
 <script>
 var graceRequest = require("../../graceUI/jsTools/request.js");
+import '../../js_sdk/ican-H5Api/ican-H5Api.js';
 export default {
 	data() {
 		return {
@@ -47,6 +48,25 @@ export default {
 	methods:{
 		showDialog(e){
 			console.log(e);
+			const _this = this
+			uni.setClipboardData({ 
+				data:e, 
+				success:function(data){
+					console.log('success');
+					_this.show1 = false;
+					uni.showToast({
+					    title: '复制成功',
+						icon:'success',
+						mask:true
+					});
+				}, 
+				fail:function(err){
+					console.log('fail');
+				}, 
+				complete:function(res){
+					console.log('complete');
+				} ,
+			})
 		}
 	}
 }
