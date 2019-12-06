@@ -75,7 +75,7 @@
 			}
 		},
 		onShow() {
-			uni.setStorageSync('drugrepid',1)//测试的时候用
+			// uni.setStorageSync('drugrepid',1)//测试的时候用
 			if (!uni.getStorageSync('drugrepid')) {
 				let appid = "wx236bc250708f2a2f"; //为测试号id
 				let code = getUrlParam("code"); //是否存在code
