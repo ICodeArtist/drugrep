@@ -30,7 +30,7 @@ export default {
 		}else{
 			uni.showLoading({});
 			graceRequest.get(
-				'https://askapp.wxori.top/drugrep/mylower',
+				'https://askapp.cloudhos.net/drugrep/mylower',
 				{drugrepid:uni.getStorageSync('drugrepid')},
 				function(res){
 					if(res.code == '0'){

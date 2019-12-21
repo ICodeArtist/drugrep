@@ -89,7 +89,7 @@
 				} else {
 					//存在则通过code传向后台调用接口返回微信的个人信息
 					graceRequest.get(
-						'https://askapp.wxori.top/wx/getWXinfo',
+						'https://askapp.cloudhos.net/wx/getWXinfo',
 						{code:code},
 						function(res){
 							if(res.code == '0'){
@@ -130,7 +130,7 @@
 				data.phone = this.phone
 				data.type = 5
 				graceRequest.post(
-					'https://askapp.wxori.top/index/buildCode',
+					'https://askapp.cloudhos.net/index/buildCode',
 					data,
 					'form', {},
 					function(res) {
@@ -213,7 +213,7 @@
 							formData.openid = _this.openid
 							console.log(formData);
 							graceRequest.post(
-								'https://askapp.wxori.top/drugrep/drugrepbind',
+								'https://askapp.cloudhos.net/drugrep/drugrepbind',
 								formData,
 								'form', {},
 								function(res) {
@@ -249,7 +249,7 @@
 
 						console.log(formData);
 						graceRequest.post(
-							'https://askapp.wxori.top/drugrep/drugreplogin',
+							'https://askapp.cloudhos.net/drugrep/drugreplogin',
 							formData,
 							'form', {},
 							function(res) {

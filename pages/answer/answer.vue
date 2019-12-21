@@ -28,7 +28,7 @@ export default {
 		const _this = this
 		uni.showLoading({});
 		graceRequest.get(
-			'https://askapp.wxori.top/back/answerqq',
+			'https://askapp.cloudhos.net/back/answerqq',
 			{type:options.type},
 			function(res){
 				if(res.code == '0'){

@@ -98,7 +98,7 @@
 			}else{
 				uni.showLoading({});
 				graceRequest.get(
-					'https://askapp.wxori.top/drugrep/getRepInfo',
+					'https://askapp.cloudhos.net/drugrep/getRepInfo',
 					{drugrepid:uni.getStorageSync('drugrepid')},
 					function(res){
 						if(res.code == '0'){
