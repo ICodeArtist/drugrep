@@ -1,7 +1,7 @@
 <template>
 	<view class="grace-margin">
 		<view class="grace-title grace-margin-top">
-			海南阿斯克互联网医院有限公司欢迎您！
+			海南阿斯克互联网医院有限公司欢迎您
 		</view>
 		<!-- <swiper class="grace-swiper swiper1" autoplay="true" indicator-color="rgba(255, 255, 255, 1)" indicator-active-color="#3688FF"
 		 style="height:276rpx" interval="3000">
@@ -77,7 +77,7 @@
 		onShow() {
 			// uni.setStorageSync('drugrepid',1)//测试的时候用
 			if (!uni.getStorageSync('drugrepid')) {
-				let appid = "wx236bc250708f2a2f"; //为测试号id
+				let appid = "wx9970965c3f3a5ba3"; //为测试号id
 				let code = getUrlParam("code"); //是否存在code
 				let _this = this;
 				console.log(code);
