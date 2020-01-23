@@ -118,6 +118,10 @@
 								icon:'none',
 								mask:true
 							});
+							uni.removeStorageSync('drugrepid');
+							uni.redirectTo({
+								url: '../index/index'
+							});
 						}
 					}
 				);
